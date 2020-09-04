@@ -31,7 +31,6 @@ namespace Task_18
                         tempArray[tempArray.Length - 1] = Convert.ToInt32(Console.ReadLine());
                         array = tempArray;
                         break;
-
                     case "sum":                        
                         for (int i = 0; i < array.Length; i++)
                         {
@@ -40,7 +39,6 @@ namespace Task_18
                         Console.WriteLine($"Сумма всех введеных чисел : {sum}");
                         Console.ReadKey();                        
                         break;
-
                     case "info":
                         if (array.Length > 0)
                         {
@@ -55,11 +53,11 @@ namespace Task_18
                         }
                         Console.ReadKey();
                         break;
-
                     case "exit":
                         enterOrExit = false;
                         break;
                 }
+                sum = 0;
                 Console.Clear();
             }
         }
